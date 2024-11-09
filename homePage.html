@@ -4,6 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="styles.css">
+<style>
+    .tab {
+  overflow: hidden;
+  border: 3px solid #7297c5;
+  background-color: #7297c5;
+}
+.tab button:hover {
+  background-color: #7297c5;
+}
+
+</style>
 </head>
 <body>
 
@@ -28,7 +39,8 @@
             <h2>Settings</h2>
             <ul>
                 <li><button onclick="alert('Change Company clicked')">Change Company</button></li>
-                <li><button onclick="alert('Types of Sentiment Analysis clicked')">Types of Sentiment Analysis</button></li>
+                <a href="page1.html">
+                    <li><button onclick="alert('Types of Sentiment Analysis clicked')">Types of Sentiment Analysis</button></li> </a>
                 <li><button onclick="alert('Change Sensitivity clicked')">Change Sensitivity</button></li>
                 <li><button onclick="alert('Change Demographics clicked')">Change Demographics</button></li>
             </ul>
