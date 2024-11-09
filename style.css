@@ -1,8 +1,8 @@
 #test {
   position: relative;
   width: 1000px;
-  height: 500px;
-  background-color: rgba(12, 59, 170, 0.9);
+  height: 650px;
+  background-color: rgba(2, 123, 255, 0.9);
   transition: background-color .1s;
 }
 #test:hover {
