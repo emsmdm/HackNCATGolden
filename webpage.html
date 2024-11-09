@@ -6,48 +6,187 @@
     <link rel="stylesheet" href="signUp.css">
 </head>
 <body>
-<div class="top-bar">
-    <div class="logo">
-        <a href="#">MyWebsite</a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#home">Home and Current</a></li>
-            <li><a href="#about">Predictive</a></li>
-            <li><a href="#services">Datasets</a></li>
-            <li><a href="#contact">Chatbot</a></li>
-        </ul>
-    </nav>
-</div>
-<div class="signUp">
-    <h1>Sign Up</h1>
-    <form>
-        <label for="eMail">Email:</label><br>
-        <input type="text" id="eMail" name="eMail"><br>
-        <label for="userName">Username:</label><br>
-        <input type="text" id="userName" name="userName"><br>
-        <label for="passWord">Password:</label><br>
-        <input type="text" id="passWord" name="passWord"><br>
-        <label for="rePassword">Reenter Password:</label><br>
-        <input type="text" id="rePassword" name="rePassword"><br>
-        <label for="jobField">What is your Job field?</label><br>
-        <input type="text" id="jobField" name="jobField"><br>
-        <label>How much experience do you have?</label><br>
-        <input type="radio" id="0-5 years" name="experience" value="0-5 years">
-        <label for="0-5 years">0-5 years</label>
-        <input type="radio" id="5-10 years" name="experience" value="5-10 years">
-        <label for="5-10 years">5-10 years</label>
-        <input type="radio" id="10+ years" name="experience" value="10+ years">
-        <label for="10+ years">10+ years</label><br>
-        <label for="workPlace"> Where do Work?</label><br>
-        <input type="text" id="workPlace" name="workPlace"><br>
-        <label for="wages"> How much do you make per year?</label><br>
-        <input type="text" id="wages" name="wages"><br>
-        <label for="age">How old are you?</label><br>
-        <input type="text" id="age" name="age"><br>
-        <label for="race"> What is your race?</label><br>
-        <input type="text" id="race" name="race"><br>
-        <input type="submit" value="Submit">
+<input class="c-checkbox" type="checkbox" id="start">
+<input class="c-checkbox" type="checkbox" id="progress2">
+<input class="c-checkbox" type="checkbox" id="progress3">
+<input class="c-checkbox" type="checkbox" id="progress4">
+<input class="c-checkbox" type="checkbox" id="progress5">
+<input class="c-checkbox" type="checkbox" id="progress6">
+<input class="c-checkbox" type="checkbox" id="progress7">
+<input class="c-checkbox" type="checkbox" id="progress8">
+<input class="c-checkbox" type="checkbox" id="progress9">
+<input class="c-checkbox" type="checkbox" id="progress10">
+<input class="c-checkbox" type="checkbox" id="finish">
+<div class="c-form__progress"></div>
+
+<div class="c-formContainer">
+    <div class="c-welcome">Welcome aboard!</div>
+    <form class="c-form" action="">
+        <div class="c-form__group">
+            <label class="c-form__label" for="username">
+                <input
+                        type="text"
+                        id="username"
+                        class="c-form__input"
+                        placeholder=" "
+                        pattern="[^\s]+"
+                        required>
+
+                <label class="c-form__next" for="progress2" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">Create your username.</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <div class="c-form__group">
+            <label class="c-form__label" for="femail">
+                <input
+                        type="email"
+                        id="femail"
+                        class="c-form__input"
+                        placeholder=" "
+                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                        required>
+
+                <label class="c-form__next" for="progress3" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">What's your email?</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <div class="c-form__group">
+            <label class="c-form__label" for="fpass">
+                <input
+                        type="password"
+                        id="fpass"
+                        class="c-form__input"
+                        placeholder=" "
+                        required>
+
+                <label class="c-form__next" for="progress4" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">Create your password.</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <div class="c-form__group">
+            <label class="c-form__label" for="jField">
+                <input
+                        type="text"
+                        id="jField"
+                        class="c-form__input"
+                        placeholder=" "
+                        required>
+
+                <label class="c-form__next" for="progress5" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">What's your job field?</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <div class="c-form__group">
+            <label class="c-form__label" for="eYears">
+                <input
+                        type="text"
+                        id="eYears"
+                        class="c-form__input"
+                        placeholder=" "
+                        required>
+
+                <label class="c-form__next" for="progress6" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">How many years of experience?</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <div class="c-form__group">
+            <label class="c-form__label" for="wPlace">
+                <input
+                        type="text"
+                        id="wPlace"
+                        class="c-form__input"
+                        placeholder=" "
+                        required>
+
+                <label class="c-form__next" for="progress7" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">Where do you work?</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <div class="c-form__group">
+            <label class="c-form__label" for="yWages">
+                <input
+                        type="text"
+                        id="yWages"
+                        class="c-form__input"
+                        placeholder=" "
+                        required>
+
+                <label class="c-form__next" for="progress8" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">How much do you make in a year?</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <div class="c-form__group">
+            <label class="c-form__label" for="age">
+                <input
+                        type="text"
+                        id="age"
+                        class="c-form__input"
+                        placeholder=" "
+                        required>
+
+                <label class="c-form__next" for="progress9" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">How old are you?</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <div class="c-form__group">
+            <label class="c-form__label" for="race">
+                <input
+                        type="text"
+                        id="race"
+                        class="c-form__input"
+                        placeholder=" "
+                        required>
+
+                <label class="c-form__next" for="finish" role="button">
+                    <span class="c-form__nextIcon"></span>
+                </label>
+
+                <span class="c-form__groupLabel">How many years of experience?</span>
+                <b class="c-form__border"></b>
+            </label>
+        </div>
+
+        <label class="c-form__toggle" for="start">Register<span class="c-form__toggleIcon"></span></label>
     </form>
 </div>
 
