@@ -1,7 +1,7 @@
 #test {
   position: relative;
   width: 1000px;
-  height: 100px;
+  height: 500px;
   background-color: rgba(12, 59, 170, 0.9);
   transition: background-color .1s;
 }
@@ -22,6 +22,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
+    z-index: -1;
 }
 @keyframes test_hover {
     from {
