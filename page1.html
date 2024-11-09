@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Types of Sentiment Analysis</title>
+
+    <style>
+    /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 3px solid #7297c5;
+  background-color: #7297c5;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 25px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #7297c5;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #7297c5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+body {background-color: black;}
+h2   {color: white;}
+p    {color: white;}
+    </style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Multilingual')">Multilingual</button>
+  <button class="tablinks" onclick="openCity(event, 'Emotion recognition')">Emotion recognition</button>
+  <button class="tablinks" onclick="openCity(event, 'Intent-based')">Intent-based</button>
+  <button class="tablinks" onclick="openCity(event, 'Sarcasm analysis')">Sarcasm analysis</button>
+  <button class="tablinks" onclick="openCity(event, 'Subjectivity classification')">Subjectivity classification</button>
+</div>
+
+<div id="Multilingual" class="tabcontent">
+  <h3 style="color:white;">Multilingual</h3>
+  <p style="color:white;">This type of sentiment analysis is more complex than others
+because it requires many preprocessing steps and online resources.</p>
+</div>
+
+<div id="Emotion recognition" class="tabcontent">
+  <h3 style="color:white;">Emotion recognition</h3>
+  <p style="color:white;">This is an advanced form of sentiment analysis that identifies emotions through
+physical actions, facial expressions, speaking, behavior, writing, and gestures.</p>
+</div>
+
+<div id="Intent-based" class="tabcontent">
+  <h3  style="color:white;">Intent-based</h3>
+  <p style="color:white;">This type of sentiment analysis aims to understand why customers, employees, or
+other parties act the way they do.</p>
+</div>
+
+<div id="Sarcasm analysis" class="tabcontent">
+  <h3 style="color:white;">Sarcasm analysis</h3>
+  <p style="color:white;">This is a critical area of focus for sentiment analysis systems because sarcasm and
+irony are so common in everyday conversation.</p>
+</div>
+
+<div id="Subjectivity classification" class="tabcontent">
+  <h3 style="color:white;">Subjectivity classification</h3>
+  <p style="color:white;">TThis involves classifying sentences into subjective and objective classes. Subjective
+sentences express the writer's opinions, evaluations, emotions, beliefs, and judgments.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
