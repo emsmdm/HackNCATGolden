@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f8f8f8;">
+        <div class="logo">
+            <a href="#" style="font-size: 24px; font-weight: bold; text-decoration: none; color: #333;">Financimental</a>
+        </div>
+        <nav>
+            <ul style="list-style-type: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+                <li><a href="#home" style="text-decoration: none; color: #333;">Home and Current</a></li>
+                <li><a href="#about" style="text-decoration: none; color: #333;">Predictive Algorithm</a></li>
+                <li><a href="#services" style="text-decoration: none; color: #333;">Datasets</a></li>
+                <li><a href="#contact" style="text-decoration: none; color: #333;">Chatbot</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Area without Sidebar -->
+    <div class="main-container" style="padding: 20px;">
+        <div class="content">
+            <h1>Welcome to Financimental!</h1>
+            <p>This is your homepage content. Here you can add your main page content.</p>
+        </div>
+    </div>
+
+    <!-- Input Form positioned at the bottom third -->
+    <div class="input-form" style="position: absolute; top: 66%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+        <form action="#" method="post" style="display: inline-block;">
+            <label for="userInput" style="font-size: 16px; margin-right: 10px;">Just tell us what you'd like to see. Our AI will handle it.:</label>
+            <input type="text" id="userInput" name="userInput" placeholder="[Company] , [Demographics], [Platform]" style="padding: 10px; font-size: 16px; width: 250px; margin-right: 10px;">
+            <button type="submit" style="padding: 10px 20px; font-size: 16px;">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
